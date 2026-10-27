@@ -535,7 +535,14 @@ LOG.log(
     e
 );
 ```
-
+La diferencia es que el ```java
+LOG.log(
+    Level.SEVERE,
+    "Error al leer archivo",
+    e
+);
+```
+ te dice qué pasó y dónde pas, y el otro solo te dice que paso, pero no donde paso, solo sabes que hay un error
 
 ## Parte VII. Registrar mensajes en un archivo
 
