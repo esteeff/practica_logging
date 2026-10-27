@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ProcesadorCalificaciones {
@@ -9,6 +11,15 @@ public class ProcesadorCalificaciones {
         Logger.getLogger(
             ProcesadorCalificaciones.class.getName()
         );
+
+    
+    static {
+        LOG.setUseParentHandlers(false); 
+        LOG.setLevel(Level.FINE);      
+        ConsoleHandler consola = new ConsoleHandler();
+        consola.setLevel(Level.FINE);  
+        LOG.addHandler(consola);
+    }
 
     public static void main(String[] args) {
 

@@ -429,11 +429,11 @@ Completar la siguiente tabla indicando que mensajes se muestran en cada configur
 
 | Configuración | SEVERE | WARNING | INFO | FINE |
 |---|---|---|---|---|
-| `SEVERE` | | | | |
-| `WARNING` | | | | |
-| `INFO` | | | | |
-| `FINE` | | | | |
-| `ALL` | | | | |
+| `SEVERE` | SI | NO | NO | NO |
+| `WARNING` | SI |SI | NO |NO |
+| `INFO` | SI|SI |SI |NO |
+| `FINE` |SI |SI | SI| SI|
+| `ALL` |SI | SI| SI| SI|
 
 
 
