@@ -628,13 +628,19 @@ El archivo tendrá una estructura similar a:
 
 Identificar:
 
-1. Fecha.
-2. Logger.
-3. Nivel.
-4. Clase.
-5. Método.
-6. Hilo.
-7. Mensaje.
+Fecha: <date>2026-10-27T17:40:28.476854400Z</date>
+
+Logger: <logger>ProcesadorCalificaciones</logger>
+
+Nivel: <level>INFO</level> (también aparece FINE y WARNING)
+
+Clase: <class>ProcesadorCalificaciones</class>
+
+Método: <method>main</method>
+
+Hilo: <thread>3</thread>
+
+Mensaje: <message>Archivo recibido: calificaciones.txt</message>
 
 
 ## Parte VIII. Log en texto plano
@@ -678,11 +684,11 @@ aplicacion.log
 
 | Característica | XML | Texto |
 |---|----|---|
-| Fácil de leer por una persona | | |
-| Fácil de procesar automáticamente | | |
-| Estructura explícita | | |
-| Tamaño más compacto | | |
-| Adecuado para inspección rápida | | |
+| Fácil de leer por una persona | NO|SI |
+| Fácil de procesar automáticamente | SI| NO|
+| Estructura explícita |SI |NO |
+| Tamaño más compacto |NO |SI |
+| Adecuado para inspección rápida | NO| SI|
 
 
 
@@ -1010,5 +1016,15 @@ El estudiante deberá entregar:
 - Tabla de niveles completada.
 - Respuestas a la actividad de diagnóstico.
 - Breve explicación de la diferencia entre `Logger`, `Handler`, `Level` y `Formatter`.
+
+Logger (El Registrador): Es el punto de entrada. Es el objeto que usamos en el código para enviar los mensajes. Su trabajo es capturar el evento y decidir si el mensaje es lo suficientemente importante para ser procesado (según el nivel que tenga configurado).
+
+Handler (El Manejador): Es el que decide a dónde va el mensaje. El Logger no sabe si el mensaje va a la pantalla o a un archivo; simplemente se lo pasa a sus Handler. Tenemos el ConsoleHandler (que lo imprime en pantalla) y el FileHandler (que lo guarda en un archivo).
+
+Level (El Nivel): Es la etiqueta de gravedad del mensaje (SEVERE, WARNING, INFO, FINE, etc.). Se usa tanto en el Logger como en los Handler para filtrar. Por ejemplo, si configuras la consola en INFO, los mensajes de nivel FINE (más detallados) serán ignorados en la pantalla, aunque se sigan guardando en el archivo.
+
+Formatter (El Formateador): Es el que decide cómo se ve el mensaje. El Handler le pasa el mensaje al Formatter, y este lo convierte en texto. Podemos usar SimpleFormatter (que da un formato de texto plano legible) o el XMLFormatter (que da un formato estructurado con etiquetas).
+
+En resumen: El Logger atrapa el mensaje, el Level dice qué tan grave es, el Handler decide a dónde va, y el Formatter decide cómo se ve.
 
 

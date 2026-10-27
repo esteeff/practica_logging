@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2026-10-27T18:31:44.203984900Z</date>
+  <millis>1793125904203</millis>
+  <nanos>984900</nanos>
+  <sequence>0</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>INFO</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Archivo recibido: calificaciones.txt</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.233860800Z</date>
+  <millis>1793125904233</millis>
+  <nanos>860800</nanos>
+  <sequence>1</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 85</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.234859700Z</date>
+  <millis>1793125904234</millis>
+  <nanos>859700</nanos>
+  <sequence>2</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 90</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.234859700Z</date>
+  <millis>1793125904234</millis>
+  <nanos>859700</nanos>
+  <sequence>3</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 100</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.236047Z</date>
+  <millis>1793125904236</millis>
+  <nanos>47000</nanos>
+  <sequence>4</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 75</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.236047Z</date>
+  <millis>1793125904236</millis>
+  <nanos>47000</nanos>
+  <sequence>5</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>WARNING</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación fuera de rango: 200</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.237401300Z</date>
+  <millis>1793125904237</millis>
+  <nanos>401300</nanos>
+  <sequence>6</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>WARNING</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Dato no numérico: ochenta</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.238424300Z</date>
+  <millis>1793125904238</millis>
+  <nanos>424300</nanos>
+  <sequence>7</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>FINE</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Calificación válida: 60</message>
+</record>
+<record>
+  <date>2026-10-27T18:31:44.238424300Z</date>
+  <millis>1793125904238</millis>
+  <nanos>424300</nanos>
+  <sequence>8</sequence>
+  <logger>ProcesadorCalificaciones</logger>
+  <level>INFO</level>
+  <class>ProcesadorCalificaciones</class>
+  <method>main</method>
+  <thread>3</thread>
+  <message>Registros procesados: 7</message>
+</record>
+</log>
