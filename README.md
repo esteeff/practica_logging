@@ -326,8 +326,13 @@ java ProcesadorCalificaciones inexistente.txt
 Identificar:
 
 - mensajes `INFO`;
+INFORMACIÓN: Archivo recibido: calificaciones.txt
+
+INFORMACIÓN: Registros procesados: 7
 - mensajes `SEVERE`;
+GRAVE: Error al procesar archivo: inexistente.txt (El sistema no puede encontrar el archivo especificado)
 - mensajes `FINE`.
+Aunque el código tiene la instrucción LOG.fine("Procesando línea..."), no se imprimió nada en la pantalla, porque el nivel por defecto de Java es INFO. Todo lo que sea menor a INFO (como FINE, FINER, FINEST) se ignora automáticamente a menos que lo configuremos.
 
 
 ## Parte IV. Filtrado por niveles
