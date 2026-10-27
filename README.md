@@ -132,10 +132,19 @@ LOG.info(
 Responder:
 
 1. ¿Qué información adicional muestra el mensaje del Logger?
+Muestra la fecha, la hora exacta, el nombre de la clase, el nombre del método (main) y el nivel de importancia (INFORMACIÓN).
+
 2. ¿Aparece la fecha/hora?
+Sí, aparece al principio de la línea (oct 26, 2026 4:48:10 P.M.).
+
 3. ¿Aparece el nombre de la clase?
+Sí, aparece como ProcesadorCalificaciones
+
 4. ¿Aparece el nivel del mensaje?
+Sí, en este caso aparece como INFORMACIÓN (que corresponde al nivel INFO).
+
 5. ¿Cuál de los dos mecanismos proporciona más información para diagnosticar un problema?
+El Logger. Porque System.out.println solo muestra el texto, mientras que el Logger nos dice cuándo ocurrió, en qué clase y con qué nivel de gravedad, lo cual es vital para encontrar errores en sistemas grandes.
 
 
 ## Parte II. Niveles de logging
@@ -212,13 +221,13 @@ En la siguiente tabla, signar un nivel apropiado a cada situación.
 
 | Situación | Nivel propuesto |
 |---|---|
-| La aplicación inicia correctamente | |
-| No existe el archivo solicitado | |
-| Se procesaron 250 registros | |
-| Se encontró una calificación inválida | |
-| Se cargó `application.properties` | |
-| Se desea conocer el valor de una variable durante depuración | |
-| La aplicación no puede continuar | |
+| La aplicación inicia correctamente | INFO|
+| No existe el archivo solicitado |SEVERE (o WARNING, dependiendo de si el programa puede continuar sin él) |
+| Se procesaron 250 registros | INFO |
+| Se encontró una calificación inválida | WARNING|
+| Se cargó `application.properties` | CONFIG |
+| Se desea conocer el valor de una variable durante depuración | FINE (o FINER/FINEST)|
+| La aplicación no puede continuar | SEVERE |
 
 
 

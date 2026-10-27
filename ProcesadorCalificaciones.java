@@ -1,3 +1,4 @@
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ProcesadorCalificaciones {
@@ -9,12 +10,19 @@ public class ProcesadorCalificaciones {
 
     public static void main(String[] args) {
 
-        LOG.info(
-            "Iniciando ProcesadorCalificaciones"
+        LOG.log(
+            Level.INFO,
+            "Aplicación iniciada"
         );
 
-        System.out.println(
-            "Procesando archivo..."
+        LOG.log(
+            Level.WARNING,
+            "No se proporcionó archivo"
+        );
+
+        LOG.log(
+            Level.SEVERE,
+            "No fue posible continuar"
         );
     }
 }
